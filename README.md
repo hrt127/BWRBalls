@@ -112,6 +112,30 @@ npm run step5 -- --contract 0x123... --type ERC721 --token-id 5
 npm run step5 -- --contract 0x123... --type ERC20 --limit 50
 ```
 
+### Analyze Following List
+
+Get a list of your best follows and why you're following them:
+
+```bash
+npm run analyze-following
+npm run analyze-following -- --limit 200 --min-followers 100 --top 30
+npm run analyze-following -- --best-only --top 50
+```
+
+**What it does:**
+
+- Analyzes your following list
+- Classifies people (builders, creators, traders, power-players)
+- Explains why you're following each person
+- Saves to vault as markdown report
+
+**Options:**
+
+- `--limit <number>`: Number of follows to analyze (default: 100)
+- `--min-followers <number>`: Minimum followers to include (default: 50)
+- `--top <number>`: Top N to show (default: 20)
+- `--best-only`: Show only best follows (builders, creators, power-players)
+
 ### Daily Companion
 
 Generate a daily report with engagement opportunities and context explanations:
@@ -152,7 +176,8 @@ vault-logs/
 │           ├── profile-20241216.md
 │           ├── deploy-7-cast-0x5300d6bd8f604c0b5fe7d573e02bb1489362f4d3.md
 │           ├── follower-balances-20241216.json
-│           └── companion-20241216.md
+│           ├── companion-20241216.md
+│           └── best-follows-20241216.md
 ├── mini-apps/
 │   └── nft-deployer.md
 └── README.md

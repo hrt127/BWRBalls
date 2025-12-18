@@ -12,6 +12,7 @@
     "step4": "tsx src/scripts/step4-mini-app.ts",
     "step5": "tsx src/scripts/step5-analyze-followers.ts",
     "companion": "tsx src/scripts/daily-companion.ts",
+    "analyze-following": "tsx src/scripts/analyze-following.ts",
     "dev": "tsx watch src"
   },
   "keywords": [
