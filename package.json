@@ -1,0 +1,38 @@
+{
+  "name": "bwrballs-neynar-integration",
+  "version": "1.0.0",
+  "description": "Neynar Farcaster Integration for NFT deployment workflow",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "step1": "tsx src/scripts/step1-fetch-feed.ts",
+    "step2": "tsx src/scripts/step2-fetch-profile.ts",
+    "step3": "tsx src/scripts/step3-publish-cast.ts",
+    "step4": "tsx src/scripts/step4-mini-app.ts",
+    "step5": "tsx src/scripts/step5-analyze-followers.ts",
+    "companion": "tsx src/scripts/daily-companion.ts",
+    "dev": "tsx watch src"
+  },
+  "keywords": [
+    "farcaster",
+    "neynar",
+    "nft",
+    "obsidian"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@neynar/nodejs-sdk": "^2.10.0",
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0",
+    "zod": "^3.23.8",
+    "ethers": "^6.13.2"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.14.10",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.4"
+  }
+}
